@@ -59,10 +59,6 @@
 
   <nav>
     <ul>
-      <li>
-        <a class={segment === 'about' ? 'selected' : ''} href="about">About</a>
-      </li>
-
       <!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
 		     the blog data when we hover over the link or tap it on a touchscreen -->
       <li>
@@ -72,6 +68,9 @@
           href="blog">
           Blog
         </a>
+      </li>
+	  <li>
+        <a class={segment === 'about' ? 'selected' : ''} href="about">About</a>
       </li>
     </ul>
   </nav>
